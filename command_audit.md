@@ -16,7 +16,7 @@ Commands are grouped by what they’re *for*, not alphabetically. If something s
 
 ## Chat, PMs, and items in chat
 
-`**/whisper`** — Private message. Same idea as `/msg` or `/tell` on a lot of servers. Logs can show huge lines because the whole message is one “command.”
+**`/whisper`** — Private message. Same idea as `/msg` or `/tell` on a lot of servers. Logs can show huge lines because the whole message is one “command.”
 
 Examples (shape only—names/text are yours):
 
@@ -25,7 +25,7 @@ Examples (shape only—names/text are yours):
 /msg Steve same idea different command
 ```
 
-`**/interactivechat**` — People share items, invs, or ender chests in chat; others click and open a **read-only** preview. You’ll see lots of `viewitem`, `viewinv`, `viewender` plus a long ID—that’s normal.
+**`/interactivechat`** — People share items, invs, or ender chests in chat; others click and open a **read-only** preview. You’ll see lots of `viewitem`, `viewinv`, `viewender` plus a long ID—that’s normal.
 
 Example:
 
@@ -33,15 +33,15 @@ Example:
 /interactivechat viewitem a1b2c3d4e5f6...
 ```
 
-`**/team` / `/teammsg**` — Vanilla scoreboard teams (tags, who can hit whom, etc.). Often tangled up with minigames or PvP plugins.
+**`/team`** / **`/teammsg`** — Vanilla scoreboard teams (tags, who can hit whom, etc.). Often tangled up with minigames or PvP plugins.
 
-`**/venturechat**` — Extra chat channels / formatting, depending how you set it up.
+**`/venturechat`** — Extra chat channels / formatting, depending how you set it up.
 
 ---
 
 ## Teleports and homes
 
-`**/tp**`, `**/tpa**`, `**/tpahere**`, `**/tpaccept**`, `**/tpacancel**`, `**/tpask**` — The usual dance: staff teleport, player asks to TP, “bring them here,” accept/cancel. Often Essentials or close enough.
+**`/tp`**, **`/tpa`**, **`/tpahere`**, **`/tpaccept`**, **`/tpacancel`**, **`/tpask`** — The usual dance: staff teleport, player asks to TP, “bring them here,” accept/cancel. Often Essentials or close enough.
 
 Examples:
 
@@ -54,13 +54,13 @@ Examples:
 /tpacancel             ← cancel yours or deny incoming
 ```
 
-`**/minecraft:`…** — Same as vanilla commands, just written with the namespace (e.g. `minecraft:tp`).
+**`/minecraft:`…`** — Same as vanilla commands, just written with the namespace (e.g. `minecraft:tp`).
 
 ```
 /minecraft:tp Steve Alex
 ```
 
-`**/home**`, `**/sethome**`, `**/delhome**`, `**/homes**`, `**/createhome**` — Save spots and warp back. Classic Essentials-style stuff.
+**`/home`**, **`/sethome`**, **`/delhome`**, **`/homes`**, **`/createhome`** — Save spots and warp back. Classic Essentials-style stuff.
 
 Examples:
 
@@ -71,7 +71,7 @@ Examples:
 /homes                 ← list names
 ```
 
-`**/warp**`, `**/warps**`, `**/spawn**` — Public warps and spawn.
+**`/warp`**, **`/warps`**, **`/spawn`** — Public warps and spawn.
 
 ```
 /warp shop
@@ -79,7 +79,7 @@ Examples:
 /spawn
 ```
 
-`**/betterrtp**`, `**/rtp**` — Random teleport into the world with whatever rules you configured.
+**`/betterrtp`**, **`/rtp`** — Random teleport into the world with whatever rules you configured.
 
 ```
 /rtp
@@ -90,7 +90,7 @@ Examples:
 
 ## Money and shops
 
-`**/pay**`, `**/bal**`, `**/balance**`, `**/money**`, `**/baltop**`, `**/balancetop**` — Check balance, send cash, look at the rich list. Hooks into Vault + whatever economy plugin you run.
+**`/pay`**, **`/bal`**, **`/balance`**, **`/money`**, **`/baltop`**, **`/balancetop`** — Check balance, send cash, look at the rich list. Hooks into Vault + whatever economy plugin you run.
 
 Examples:
 
@@ -101,7 +101,7 @@ Examples:
 /baltop 10
 ```
 
-`**/eco**` — Staff moving money around (give / take / set). Powerful; worth restricting.
+**`/eco`** — Staff moving money around (give / take / set). Powerful; worth restricting.
 
 Examples (syntax varies slightly by plugin—same idea):
 
@@ -111,46 +111,46 @@ Examples (syntax varies slightly by plugin—same idea):
 /eco set Steve 0
 ```
 
-`**/ah**` — Auction house GUI.
+**`/ah`** — Auction house GUI.
 
 ```
 /ah                  ← open listings
 /ah sell 10000       ← list held item for price (example shape)
 ```
 
-`**/sell**`, `**/sellgui**`, `**/sellg**` — Sell items to the server shop.
+**`/sell`**, **`/sellgui`**, **`/sellg`** — Sell items to the server shop.
 
 ```
 /sell                ← often sells what you’re holding
 /sellgui             ← opens sell GUI if your plugin uses it
 ```
 
-`**/trade**` — Safe trade window between two players.
+**`/trade`** — Safe trade window between two players.
 
 ```
 /trade Steve
 ```
 
-`**/coinflip**`, `**/cf**` — Betting another player; `cf` might be a short alias for coinflip or something else—your logs have both.
+**`/coinflip`**, **`/cf`** — Betting another player; `cf` might be a short alias for coinflip or something else—your logs have both.
 
 ```
 /coinflip challenge Steve 1000
 /coinflip accept
 ```
 
-`**/refined**` — Looks like a **second currency** or physical “notes” style money (`withdraw`, amounts). Name comes from whatever plugin you installed.
+**`/refined`** — Looks like a **second currency** or physical “notes” style money (`withdraw`, amounts). Name comes from whatever plugin you installed.
 
-`**/tokens`**, `**/token**` — Usually a separate token currency (battle pass, crate currency, etc.). Check which plugin owns it.
+**`/tokens`**, **`/token`** — Usually a separate token currency (battle pass, crate currency, etc.). Check which plugin owns it.
 
-`**/tebex**` — Store / Buycraft style integration.
+**`/tebex`** — Store / Buycraft style integration.
 
-`**/loanrequest**` — Loans—almost certainly a custom or banking plugin.
+**`/loanrequest`** — Loans—almost certainly a custom or banking plugin.
 
 ---
 
 ## Storage and items
 
-`**/pv**`, `**/vault**`, `**/vaults**`, `**/vaultadmin**`, `**/vaultsadmin**` — Extra chest pages (“playervaults”). Admin forms open or wipe other people’s pages depending on perms.
+**`/pv`**, **`/vault`**, **`/vaults`**, **`/vaultadmin`**, **`/vaultsadmin`** — Extra chest pages (“playervaults”). Admin forms open or wipe other people’s pages depending on perms.
 
 Examples:
 
@@ -161,28 +161,28 @@ Examples:
 /vaultadmin reload   ← example admin reload (exact label depends on plugin)
 ```
 
-`**/ec**` — Open ender chest without standing at one (sometimes other people’s, if staff).
+**`/ec`** — Open ender chest without standing at one (sometimes other people’s, if staff).
 
 ```
 /ec
 /ec Steve
 ```
 
-`**/invsee**` — Staff looking at (and maybe editing) someone’s live inventory.
+**`/invsee`** — Staff looking at (and maybe editing) someone’s live inventory.
 
 ```
 /invsee Steve
 ```
 
-`**/ie**`, `**/itemedit**` — Tweak item name, lore, flags from in-game—handy for events, easy to abuse.
+**`/ie`**, **`/itemedit`** — Tweak item name, lore, flags from in-game—handy for events, easy to abuse.
 
-`**/compress**`, `**/autopickup**`, `**/autosmelt**`, `**/axboosters**` — Quality-of-life: compress stacks, auto pickup, auto smelt, booster keys—whatever your pack adds.
+**`/compress`**, **`/autopickup`**, **`/autosmelt`**, **`/axboosters`** — Quality-of-life: compress stacks, auto pickup, auto smelt, booster keys—whatever your pack adds.
 
 ---
 
 ## Building and worlds
 
-`**//…` commands** (`//set`, `//replace`, `//paste`, `//brush`, `//undo`, shapes, biomes, etc.) — **WorldEdit** (or **FAWE** on top of it). Bulk terrain and block edits. `/fawe reload` reloads that side of things. Big selections can still lag or eat RAM—same as always.
+**WorldEdit / FAWE** — the big `//` commands (`//set`, `//replace`, `//paste`, `//brush`, `//undo`, shapes, biomes, etc.). Bulk terrain and block edits. `/fawe reload` reloads that side of things. Big selections can still lag or eat RAM—same as always.
 
 Typical flow—you select a box with the wand (or `//pos1` / `//pos2`), then run an op:
 
@@ -197,14 +197,14 @@ Typical flow—you select a box with the wand (or `//pos1` / `//pos2`), then run
 //setbiome plains        ← biome inside selection
 ```
 
-`**/schem**`, `**/worldedit**` — Schematics and WorldEdit admin/help style commands.
+**`/schem`**, **`/worldedit`** — Schematics and WorldEdit admin/help style commands.
 
 ```
 //schem load shopbuild
 //schem save myspawn
 ```
 
-`**/rg**` — **WorldGuard**: cuboid **regions** + **flags**. A flag is just “for this region, allow or deny something.” Your logs had tons of `ironore`, `diamondblock`, etc.—same idea, different region names.
+**`/rg`** — **WorldGuard**: cuboid **regions** + **flags**. A flag is just “for this region, allow or deny something.” Your logs had tons of `ironore`, `diamondblock`, etc.—same idea, different region names.
 
 Examples:
 
@@ -224,16 +224,16 @@ Examples:
 /rg reload                     ← reload WG configs from disk
 ```
 
-So `**/rg flag` isn’t magic by itself**—it always means “change one behavior flag on a named region.” First argument after `flag` is the region, then the flag name, then usually allow/deny (or a value).
+So **`/rg flag`** isn’t magic by itself—it always means “change one behavior flag on a named region.” First argument after `flag` is the region, then the flag name, then usually allow/deny (or a value).
 
-`**/fill`**, `**/setblock**`, `**/clone**` (if present) — Vanilla bulk building at coords.
+**`/fill`**, **`/setblock`**, **`/clone`** (if present) — Vanilla bulk building at coords.
 
 ```
 /fill ~ ~ ~ ~10 ~10 ~10 minecraft:air replace minecraft:stone
 /setblock ~ ~-1 ~ minecraft:bedrock
 ```
 
-`**/chunky**` — Pregenerates chunks so the world doesn’t stutter when players explore.
+**`/chunky`** — Pregenerates chunks so the world doesn’t stutter when players explore.
 
 ```
 /chunky start world
@@ -244,7 +244,7 @@ So `**/rg flag` isn’t magic by itself**—it always means “change one behavi
 
 ## Permissions, tab list, placeholders
 
-`**/lp**` — **LuckPerms**. Groups, tracks, temp perms, verbose mode. `**/lp editor`** opens the web UI; you paste a command back to apply edits.
+**`/lp`** — **LuckPerms**. Groups, tracks, temp perms, verbose mode. **`/lp editor`** opens the web UI; you paste a command back to apply edits.
 
 Examples:
 
@@ -256,7 +256,7 @@ Examples:
 /lp applyedits <paste from browser>
 ```
 
-`**/tab**` — Tab list, nametags, scoreboards. `**/tab reload**` after you edit configs.
+**`/tab`** — Tab list, nametags, scoreboards. **`/tab reload`** after you edit configs.
 
 Examples (TAB plugin—exact subcommands match your YAML):
 
@@ -266,14 +266,14 @@ Examples (TAB plugin—exact subcommands match your YAML):
 /tab nametag preview               ← depends on version; idea is “see nametag layout”
 ```
 
-`**/papi**`, `**/placeholderapi**` — PlaceholderAPI: pull expansions from the cloud, wire placeholders into TAB, menus, chat.
+**`/papi`**, **`/placeholderapi`** — PlaceholderAPI: pull expansions from the cloud, wire placeholders into TAB, menus, chat.
 
 ```
 /papi ecloud download Vault
 /papi list                       ← often lists expansions (syntax varies)
 ```
 
-`**/deluxemenu**` — Opens menu GUIs from config (`open …`).
+**`/deluxemenu`** — Opens menu GUIs from config (`open …`).
 
 ```
 /deluxemenu open storage
@@ -284,7 +284,7 @@ Examples (TAB plugin—exact subcommands match your YAML):
 
 ## Grief checks and rollbacks
 
-`**/co**`, `**/coreprotect**`, sometimes `**/core**` — **CoreProtect**: click blocks to see history, search who broke what, roll back or restore. Main staff tool for grief.
+**`/co`**, **`/coreprotect`**, sometimes **`/core`** — **CoreProtect**: click blocks to see history, search who broke what, roll back or restore. Main staff tool for grief.
 
 Examples:
 
@@ -302,7 +302,7 @@ Think of it as three verbs: **inspect** (click mode), **lookup** (search log), *
 
 ## Moderation
 
-`**/ban`**, `**/unban**`, `**/tempban**`, `**/ipban**`, `**/banip**` — Ban toolkit, including IP and timed bans.
+**`/ban`**, **`/unban`**, **`/tempban`**, **`/ipban`**, **`/banip`** — Ban toolkit, including IP and timed bans.
 
 ```
 /ban Steve griefing
@@ -311,7 +311,7 @@ Think of it as three verbs: **inspect** (click mode), **lookup** (search log), *
 /banip 203.0.113.50 VPN abuse
 ```
 
-`**/mute**`, `**/unmute**`, `**/tempmute**` — Chat mutes.
+**`/mute`**, **`/unmute`**, **`/tempmute`** — Chat mutes.
 
 ```
 /mute Steve
@@ -319,40 +319,40 @@ Think of it as three verbs: **inspect** (click mode), **lookup** (search log), *
 /unmute Steve
 ```
 
-`**/warn**`, `**/unwarn**`, `**/warnlist**` — Warning strikes.
+**`/warn`**, **`/unwarn`**, **`/warnlist`** — Warning strikes.
 
 ```
 /warn Steve harassment
 /warnlist Steve
 ```
 
-`**/kick**` — Boot someone offline.
+**`/kick`** — Boot someone offline.
 
 ```
 /kick Steve please re-read /rules
 ```
 
-`**/litebans**` — If you see this root, LiteBans (or similar) is probably in the mix.
+**`/litebans`** — If you see this root, LiteBans (or similar) is probably in the mix.
 
-`**/alts**` — Alt / linked-account style lookups.
+**`/alts`** — Alt / linked-account style lookups.
 
 ```
 /alts Steve
 ```
 
-`**/broadcast**`, `**/announce**` — Loud server-wide messages (usually staff).
+**`/broadcast`**, **`/announce`** — Loud server-wide messages (usually staff).
 
 ```
 /broadcast Server reboot in 5 minutes
 ```
 
-`**/sudo**` — Run a command *as* another player. Very strong.
+**`/sudo`** — Run a command *as* another player. Very strong.
 
 ```
 /sudo Steve spawn          ← runs /spawn as Steve
 ```
 
-`**/op**`, `**/deop**` — Vanilla operator flag. Also very strong.
+**`/op`**, **`/deop`** — Vanilla operator flag. Also very strong.
 
 ```
 /op Steve
@@ -363,7 +363,7 @@ Think of it as three verbs: **inspect** (click mode), **lookup** (search log), *
 
 ## PvP, events, voice
 
-`**/tournament**`, `**/specmatch**`, `**/ragekoth**`, `**/ffa**`, `**/combattag**`, `**/pvp**`, `**/pvpmanager**`, `**/pvpstatus**` — Event and PvP plugins: brackets, spectating, KOTH-style zones, combat tags, etc. Exact behavior = your configs.
+**`/tournament`**, **`/specmatch`**, **`/ragekoth`**, **`/ffa`**, **`/combattag`**, **`/pvp`**, **`/pvpmanager`**, **`/pvpstatus`** — Event and PvP plugins: brackets, spectating, KOTH-style zones, combat tags, etc. Exact behavior = your configs.
 
 Example shapes (names change per plugin):
 
@@ -372,7 +372,7 @@ Example shapes (names change per plugin):
 /pvpmanager reload
 ```
 
-`**/voicechat**`, `**/vcban**`, `**/unvcban**` — Voice chat plugin; bans are for voice, not Minecraft chat.
+**`/voicechat`**, **`/vcban`**, **`/unvcban`** — Voice chat plugin; bans are for voice, not Minecraft chat.
 
 ```
 /voicechat invite Steve          ← depends on plugin build
@@ -384,39 +384,39 @@ Example shapes (names change per plugin):
 
 ## Gameplay that looks custom on your server
 
-`**/instellar**` (and `instellar:…` variants) — Your own progression / gear / dialogue / zone stuff from logs—not one universal public plugin with a single manual. If you need docs, they’re in that plugin’s config or dev page.
+**`/instellar`** (and `instellar:…` variants) — Your own progression / gear / dialogue / zone stuff from logs—not one universal public plugin with a single manual. If you need docs, they’re in that plugin’s config or dev page.
 
-`**/meg**` — Shows up as utility-style commands (reload, mass kills, etc.). Treat as part of your stack until you match it to a JAR name.
+**`/meg`** — Shows up as utility-style commands (reload, mass kills, etc.). Treat as part of your stack until you match it to a JAR name.
 
-`**/zonebooster**`, `**/boost**` — Timed multipliers (drops, XP, whatever you wired). Server-specific.
+**`/zonebooster`**, **`/boost`** — Timed multipliers (drops, XP, whatever you wired). Server-specific.
 
-`**/welcome**` — New-player flow / rewards (sometimes tied to crates).
+**`/welcome`** — New-player flow / rewards (sometimes tied to crates).
 
-`**/killall**` — Wipes entity types in bulk. Easy to aim wrong.
+**`/killall`** — Wipes entity types in bulk. Easy to aim wrong.
 
-`**/timeblades**` — Didn’t map cleanly to a well-known public plugin; probably custom or niche—check your plugin folder.
+**`/timeblades`** — Didn’t map cleanly to a well-known public plugin; probably custom or niche—check your plugin folder.
 
-`**/keepinventoryzones**` — Per-area keep-inventory rules (PvP vs safe zones).
+**`/keepinventoryzones`** — Per-area keep-inventory rules (PvP vs safe zones).
 
-`**/replay**` — Recording / replay for investigations (plugin-dependent).
+**`/replay`** — Recording / replay for investigations (plugin-dependent).
 
-`**/forge**` — Often someone typing “Forge” on a Paper server by habit, or a custom command named that—context in the raw log line helps.
+**`/forge`** — Often someone typing “Forge” on a Paper server by habit, or a custom command named that—context in the raw log line helps.
 
-`**/login**` — Usually an **auth** plugin (password on join) if you’re offline-mode or behind a certain proxy setup.
+**`/login`** — Usually an **auth** plugin (password on join) if you’re offline-mode or behind a certain proxy setup.
 
 ---
 
 ## NPCs, disguises, misc admin
 
-`**/npc`** — Citizens / FancyNPCs / similar: NPCs, skins, teleport, dialogue hooks.
+**`/npc`** — Citizens / FancyNPCs / similar: NPCs, skins, teleport, dialogue hooks.
 
-`**/disguise**` — Look like a mob or another player (LibsDisguises-type).
+**`/disguise`** — Look like a mob or another player (LibsDisguises-type).
 
-`**/nickname**` — Display name changes.
+**`/nickname`** — Display name changes.
 
-`**/dialogue**` — NPC conversation flows.
+**`/dialogue`** — NPC conversation flows.
 
-`**/fholo**` — Fancy holograms (floating text, edits, copy, etc.).
+**`/fholo`** — Fancy holograms (floating text, edits, copy, etc.).
 
 ```
 /fholo create text WelcomeLine
@@ -424,30 +424,30 @@ Example shapes (names change per plugin):
 /fholo edit WelcomeLine moveHere
 ```
 
-`**/spark**` — Profiler: see what’s eating CPU when the server dips.
+**`/spark`** — Profiler: see what’s eating CPU when the server dips.
 
-`**/paper**` — Paper’s own debug / dump style commands (depends what you type after it).
+**`/paper`** — Paper’s own debug / dump style commands (depends what you type after it).
 
-`**/plugman**` — Load/unload plugins on the fly. Handy in a pinch, risky on a live server—restarts are safer.
+**`/plugman`** — Load/unload plugins on the fly. Handy in a pinch, risky on a live server—restarts are safer.
 
-`**/matrix**` — Matrix anticheat admin.
+**`/matrix`** — Matrix anticheat admin.
 
-`**/skript**` — Skript: custom scripted commands and logic.
+**`/skript`** — Skript: custom scripted commands and logic.
 
-`**/irp**` — Matches **Inventory Rollback Plus** pretty well (backups, restore menus). There’s also a bit of `/inventoryrollback` in the logs—could be another plugin or an alias.
+**`/irp`** — Matches **Inventory Rollback Plus** pretty well (backups, restore menus). There’s also a bit of `/inventoryrollback` in the logs—could be another plugin or an alias.
 
 ```
 /irp restore Steve               ← open backup browser for Steve
 /irp reload
 ```
 
-`**/damage**` — Vanilla damage to entities.
+**`/damage`** — Vanilla damage to entities.
 
 ```
 /damage Steve 6 minecraft:player_attack
 ```
 
-`**/effect**`, `**/enchant**`, `**/give**`, `**/summon**`, `**/kill**`, `**/attribute**` — Creative / admin vanilla toolbox.
+**`/effect`**, **`/enchant`**, **`/give`**, **`/summon`**, **`/kill`**, **`/attribute`** — Creative / admin vanilla toolbox.
 
 ```
 /effect give Steve speed 30 1 true
@@ -457,21 +457,21 @@ Example shapes (names change per plugin):
 /kill @e[type=item,distance=..10]
 ```
 
-`**/rules**`, `**/help**`, `**/helpop**`, `**/version**`, `**/ver**`, `**/plugins**` — Info and “call staff” style commands.
+**`/rules`**, **`/help`**, **`/helpop`**, **`/version`**, **`/ver`**, **`/plugins`** — Info and “call staff” style commands.
 
-`**/discord**`, `**/discordannounce**` — Discord bridge (DiscordSRV-type): linking, announcements.
+**`/discord`**, **`/discordannounce`** — Discord bridge (DiscordSRV-type): linking, announcements.
 
-`**/shopkeepers**`, `**/shopgui**`, `**/auction**`, `**/zauction**` — NPC shops, GUI shops, auction variants.
+**`/shopkeepers`**, **`/shopgui`**, **`/auction`**, **`/zauction`** — NPC shops, GUI shops, auction variants.
 
-`**/fish**` — Fishing plugin / event commands.
+**`/fish`** — Fishing plugin / event commands.
 
-`**/is**` — Often skyblock “island” when people shorten it.
+**`/is`** — Often skyblock “island” when people shorten it.
 
-`**/mv**`, `**/mvtp**` — Multiverse-style world jumps if you use it.
+**`/mv`**, **`/mvtp`** — Multiverse-style world jumps if you use it.
 
-`**/join**`, `**/profile**`, `**/joinleave**` — Join messages or profile UIs—depends on your pack.
+**`/join`**, **`/profile`**, **`/joinleave`** — Join messages or profile UIs—depends on your pack.
 
-`**/t**` — Too generic to guess without the rest of the line; could be tempban, team, or a plugin alias.
+**`/t`** — Too generic to guess without the rest of the line; could be tempban, team, or a plugin alias.
 
 ---
 
@@ -483,7 +483,7 @@ FAWE sits under WorldEdit and speeds up big edits. Players still type `//` the s
 
 ## Perms worth locking down
 
-Anyone with `**/sudo**`, `**/op**`, `**/eco**`, rollback commands, WorldEdit, `**/invsee**`, or `**/lp**` can do a lot of damage—accidentally or on purpose. `**/plugman**` is in the same bucket.
+Anyone with **`/sudo`**, **`/op`**, **`/eco`**, rollback commands, WorldEdit, **`/invsee`**, or **`/lp`** can do a lot of damage—accidentally or on purpose. **`/plugman`** is in the same bucket.
 
 Logs only prove someone *typed* the command; they don’t show whether it was wrong click, joke, or policy-approved.
 
