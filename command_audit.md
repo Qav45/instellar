@@ -1,7 +1,5 @@
-# Minecraft server commands cheat sheet
-
-Paper and Spigot servers glue together vanilla Minecraft commands and plugin commands. This page only lists things where the behavior is well defined (vanilla docs, or a plugin with clear public docs). If a command isn’t here, it’s either too server-specific or needs that server’s plugin list to interpret.
-
+# instellar cheating
+instellar cheat sheet
 ---
 
 ## Private messages
